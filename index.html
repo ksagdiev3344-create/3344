@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loyihalar va So'rovnoma Sahifasi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .section {
+            background: #ffffff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        iframe, object {
+            width: 100%;
+            height: 450px;
+            border: none;
+            border-radius: 4px;
+        }
+        .search-box {
+            margin-bottom: 15px;
+            display: flex;
+            gap: 10px;
+        }
+        .search-box input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .search-box button {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .search-box button:hover {
+            background-color: #2980b9;
+        }
+        .links-list {
+            list-style: none;
+            padding: 0;
+        }
+        .links-list li {
+            margin-bottom: 10px;
+        }
+        .links-list a {
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .links-list a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Loyihalar va So'rovnoma Markazi</h1>
+        <p>Barcha ma'lumotlar, taqdimotlar va jadvallar jamlanmasi</p>
+    </header>
+
+    <!-- YouTube Video Qidirish va Ko'rsatish Bo'limi -->
+    <div class="section">
+        <h2>YouTube Video va Qidiruv</h2>
+        <div class="search-box">
+            <input type="text" id="videoSearchInput" placeholder="YouTube'dan video qidirish...">
+            <button onclick="searchYouTube()">Qidirish</button>
+        </div>
+        <!-- Asosiy video -->
+        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+            <iframe id="mainVideo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/jc05ZmqXFg8" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Google Sheet Bo'limi -->
+    <div class="section">
+        <h2>Google Jadval (Google Sheet)</h2>
+        <iframe src="https://docs.google.com/spreadsheets/d/1k_kP3IJKI4qMmDNYqlRw_6II6YHrlWLuTAm-psDT_pw/edit?usp=sharing&widget=true&headers=false"></iframe>
+    </div>
+
+    <!-- So'rovnoma Bo'limi -->
+    <div class="section">
+        <h2>So'rovnoma (Google Forms)</h2>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd2VeUcOP_OcUYOufckkhV5dv1cdqsytdO9oPlVERsLnq5YxQ/viewform?embedded=true"></iframe>
+    </div>
+
+    <!-- Taqdimot Bo'limi -->
+    <div class="section">
+        <h2>Taqdimot (Google Presentation)</h2>
+        <iframe src="https://docs.google.com/presentation/d/1f3s8haQPedoQiURmm2a9lhlKckBQ3LbvVBu3nXiud5w/embed?start=false&loop=false&delayms=3000"></iframe>
+    </div>
+
+    <script>
+        function searchYouTube() {
+            const query = document.getElementById('videoSearchInput').value;
+            if (query) {
+                // YouTube qidiruv sahifasiga yo'naltirish yoki natijani ochish
+                window.open('https://www.youtube.com/results?search_query=' + encodeURIComponent(query), '_blank');
+            } else {
+                alert('Iltimos, qidirish uchun so\'z kiriting!');
+            }
+        }
+    </script>
+
+</body>
+</html>
+
+YouTube (https://youtube.com/embed/jc05ZmqXFg8)
+Егор Крид - Голос
+Слушать / скачать песню - https://egorkreed.lnk.to/Golos
+
+Егор Крид - Голос. Первая премьера в 2021 году, созвучная с проектом, в котором я сейчас принимаю участие!
+
+На запястье ролексы
+А под ними - полосы
+На моей постели твои волосы.
+Переслушиваю войсы
+С твоим голосом.
+
+Music production Alex Davia
+Produced by Yoola 
+Creative production - Alex Bazhenova 
+Montage - Vova Gross 
+Line production - Alexey Baskakov
+
+Соц. сети ЕГОРА КРИДА:
+- Instagram: https://www.instagram.com/egorkreed
+- Tik Tok: https://www.tiktok.com/@egorkreed
+- ВКонтакте: https://vk.com/egorkreed
+- Телеграм канал - https://t.me/egorkreed
+- Твич - https://www.twitch.tv/EGORKREED
+- Twitter: https://twitter.com/egorkreed
+- Facebook: https://www.facebook.com/kreedmusic
+- OK: https://ok.ru/egorkreed/
+
+#егоркрид #голос #премьера2021
